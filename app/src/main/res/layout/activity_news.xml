@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.com.hzy.zhongyinews.activity.NewsActivity">
+
+    <FrameLayout
+        android:id="@+id/news_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <RadioGroup
+        android:background="@mipmap/bottom_tab_bg"
+        android:id="@+id/radiogroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton1"
+            style="@style/radiobtnstyle"
+            android:text="首页"
+            android:checked="true"
+            android:drawableTop="@drawable/home_selector"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton2"
+            style="@style/radiobtnstyle"
+            android:text="热点"
+            android:drawableTop="@drawable/gov_selector"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton3"
+            style="@style/radiobtnstyle"
+            android:text="收藏"
+            android:drawableTop="@drawable/smartservice_selector"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton4"
+            style="@style/radiobtnstyle"
+            android:text="设置"
+            android:drawableTop="@drawable/setting_selector"/>
+    </RadioGroup>
+</LinearLayout>
